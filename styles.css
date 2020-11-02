@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+  }
+
+#siteWrapper{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    min-height: 100vh;
+}
+
+body{
+    background-color: rgb(226, 225, 208);
+}
+
+#aboutWrapper{
+    background-color: rgb(123, 172, 129);
+    padding-top: 15%;
+    padding-inline: 10%;
+    height: 120%;
+}
+
+#header{
+    text-align: center;
+    padding-top: 5%;
+}
+
+.row {
+    margin-top: 3%;
+}
+
+.long {
+    display: none;
+}
+
+.card {
+    height: 50vh;
+    width: 100%;
+    max-width: 15vw;
+}
+
+.card-img-top {
+    height: 20vh;
+}
+
+.card:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari */
+    transform: scale(1.2);
+    z-index: 1;
+    width: 150%;
+    max-width: 20vw;
+    height: auto;
+}
+
+.card:hover .card-img-top{
+    height: auto;
+}
+
+.card:hover .short{
+    display: none;
+}
+
+.card:hover .long{
+    display: inherit;
+}
+            
+h6{
+    display: none;
+}
+
+.card:hover h6{
+    display: inherit;
+}
